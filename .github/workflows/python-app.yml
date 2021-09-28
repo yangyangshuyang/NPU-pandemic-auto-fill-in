@@ -1,0 +1,25 @@
+name: NPW-pandemic-auto-fill-in
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '45 1 * * *'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
+    - name: Run task
+      run: python NPU_pandemic_auto_fill_in.py ${{ secrets.NAME }} ${{ secrets.STUDENTID }} ${{ secrets.PASSWORD }} ${{ secrets.WEBHOOK }}
