@@ -1,4 +1,4 @@
-name: NPW-pandemic-auto-fill-in
+name: NPU-pandemic-auto-fill-in
 
 on:
   push:
