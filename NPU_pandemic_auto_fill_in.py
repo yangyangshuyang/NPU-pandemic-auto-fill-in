@@ -4,10 +4,10 @@ import json
 import re
 
 # 网页url
-yqtb_url = "http://yqtb.nwpu.edu.cn"
+yqtb_url = "https://yqtb.nwpu.edu.cn"
 uis_login_url = "https://uis.nwpu.edu.cn/cas/login?service=http%3A%2F%2Fyqtb.nwpu.edu.cn%2F%2Fsso%2Flogin.jsp%3FtargetUrl%3Dbase64aHR0cDovL3lxdGIubndwdS5lZHUuY24vL3d4L3hnL3l6LW1vYmlsZS9pbmRleC5qc3A%3D"
-yqtb_fillin_url = "http://yqtb.nwpu.edu.cn/wx/ry/" # 获取到签名和时间戳后拼接上去
-yqtb_detail_url = "http://yqtb.nwpu.edu.cn/wx/ry/jrsb.jsp"
+yqtb_fillin_url = "https://yqtb.nwpu.edu.cn/wx/ry/" # 获取到签名和时间戳后拼接上去
+yqtb_detail_url = "https://yqtb.nwpu.edu.cn/wx/ry/jrsb_xs.jsp"
 
 # 疫情填报的会话ID
 yqtb_cookie = ""
